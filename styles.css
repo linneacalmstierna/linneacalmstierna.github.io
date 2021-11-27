@@ -209,6 +209,7 @@ p {
 .about .content .imgBx {
   margin-left: 40px;
   margin-right: 40px;
+  width: 100%;
 }
 .about .content .imgBx img {
   max-width: 100%;
@@ -273,7 +274,6 @@ p {
   margin: auto;
   text-decoration: none;
 }
-
 /**Services End**/
 
 /**Portfolio Start**/
@@ -336,7 +336,6 @@ a:hover {
   letter-spacing: 1px;
   font-size: 1em;
 }
-
 /**Portfolio End**/
 
 /**Contact Start**/
@@ -464,7 +463,7 @@ a:hover {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
   .services .content .servicesBx,
   .portfolio .content .PortfolioBx {
     padding: 30px 20px;
