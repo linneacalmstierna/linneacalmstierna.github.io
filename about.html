@@ -4,42 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio</title>
+    <title>Portfolio About</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!--Hamburgermenu Start-->
     <div class="toggle" onclick="toggleMenu();"></div>
-    <section class="about" id="about">
+    <!--Hamburgermenu End-->
+    <!--About Me Start-->
+    <section>
       <div class="title">
         <h2>Om mig</h2>
-        <p>
-          Lorem ipsum consectetur! Ducimus velit, cupiditate, obcaecati,iusto.
-        </p>
+        <p>Hej! Mitt namn är Linnea Calmstierna och jag är Digital Designer.</p>
       </div>
       <div class="content">
         <div class="textBx">
           <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing
-            parturientmontes, nascetur. Donec quam nec, pellent esque eu, .
-            Nulla consequat massa quis justo,aliquet nec, vulputate eget, arcu.
-            In enim a, venenatis. Lorem ipsum dolor sit amet, consectetuer
-            adipiscing parturientmontes, nascetur. Donec quam nec, pellent esque
-            eu, . Nulla consequat massa quis justo,aliquet nec, vulputate eget,
-            arcu. In enim a, venenatis
+            I september år 2021 började jag studera till Digital Designer på
+            YRGO i Göteborg. Tidigare har jag arbetat som Art Director, Grafisk
+            Formgivare och Final Art. Jag har arbetat mycket med trycksaker och
+            gjort allt från foldrar till visitkort, folieringar och broschyrer.
+            Eftersom reklambranschen går åt det digitala hållet så utbildar jag
+            mig nu i UI/UX-design, webbdesign och motiondesign.
             <br /><br />
-            Cras dapibus. elementum semper nisi. Aenean ligula, consequat vitae,
-            eleifend ac, dapibus in, viverra viverra nulla laoreet. Quisque
-            imperdiet.
+            Som designer tänker jag mycket på problemlösning och tillgänglighet.
+            Tex så skapar jag responsiva webbsidor, dvs hemsidor som anpassar
+            sin layout beroende på skärmstorlek. Jag designar i första hand
+            webbsidor för mobil då 80% av användarna besöker webben direkt i
+            mobilen. Jag väljer färger som färgblinda ser och anpassar min
+            layout så att synskadade kan få webbsidan uppläst.
           </p>
         </div>
         <div class="imgBx">
-          <img src="img/bg1.jpg" />
+          <img src="img/profilbild_2.jpg" />
         </div>
       </div>
     </section>
-
+    <!--About Me End-->
+    <!--Contact Start-->
     <section class="contact" id="contact">
-      <div class="title white">
+      <div class="title">
         <h2>Kontakta mig</h2>
         <p>
           Du är varmt välkommen att kontakta mig om du har frågor eller vill
@@ -75,11 +79,13 @@
         </div>
       </div>
     </section>
-
+    <!--Contact End-->
+    <!--Copyright Start-->
     <div class="copyright">
       <p>Copyright 2021 © Linnea Calmstierna</p>
     </div>
-
+    <!--Copyright End-->
+    <!--Menu Pages Start-->
     <div class="sidebar">
       <ul class="menu">
         <li><a href="index.html" onclick="toggleMenu();">Hem</a></li>
@@ -89,7 +95,8 @@
         <li><a href="contact.html" onclick="toggleMenu();">Kontakt</a></li>
       </ul>
     </div>
-
+    <!--Menu Pages End-->
+    <!--Java Script Function Hamburgermenu Start-->
     <script>
       function toggleMenu() {
         const menuToggle = document.querySelector(".toggle");
@@ -98,6 +105,6 @@
         sidebar.classList.toggle("active");
       }
     </script>
-    <!--slut-->
+    <!--Java Script Function Hamburgermenu End-->
   </body>
 </html>

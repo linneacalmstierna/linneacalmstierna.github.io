@@ -4,27 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio</title>
+    <title>Portfolio Homepage</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!--Menu start-->
+    <!--Hamburgermenu Start-->
     <div class="toggle" onclick="toggleMenu();"></div>
-    <section class="banner" id="home">
+        <!--Hamburgermenu End-->
+            <!--Header Homepage Start-->
+    <section>
       <div class="imgSidebar">
-        <img src="img/bg.jpg" />
+        <img src="img/profilbild.jpg" />
       </div>
       <div class="contentBx">
         <div>
-          <h4><span>Hej!</span> Mitt namn är</h4>
+          <h1><span>Hej!</span> Mitt namn är</h1>
           <h2>Linnea Calmstierna</h2>
-          <h4>Jag är Digital Designer.</h4>
+          <h1>Jag är Digital Designer.</h1>
           <p>
             Mitt arbete är främst fokuserat på UI/UX-design, illustration och
             rörlig bild. Jag studerar Digital Design på YRGO i Göteborg och
             söker praktik till hösten 2023.
           </p>
-          <a href="about.html" class="btn">OM MIG</a>
+          <a href="img/CV_Linnea_Calmstierna.pdf" download class="btn"
+            >Ladda ner CV</a
+          >
         </div>
         <ul class="sci">
           <li>
@@ -40,18 +44,20 @@
         </ul>
       </div>
     </section>
-
+<!--Header Homepage End-->
+    <!--Portfolio Start-->
     <section class="portfolio" id="portfolio">
       <div class="title">
         <h2>Min Portfolio</h2>
         <p>
           I min portfolio visar jag upp arbeten från mina tidigare anställningar
-          och egna projekt. Jag arbetar mycket med digital illustration,
-          trycksaker, rörlig bild, webbdesign samt UX- och UI-design.
+          och egna projekt.<br />
+          Jag arbetar mycket med digital illustration, trycksaker, rörlig bild,
+          webbdesign samt UX- och UI-design.
         </p>
-        <div class="button"><a href="portfolio.html">SE MER</a></div>
+        <a href="portfolio.html" class="btn"
+        >Se mer</a
       </div>
-
       <div class="content">
         <div class="PortfolioBx">
           <div class="imgBx">
@@ -59,27 +65,25 @@
           </div>
           <div class="TextBx">
             <h3>Infografik</h3>
-            <a class="nysida" href="http://linneacalmstierna.se">Se mer här</a>
+            <a class="newpage" href="infografik.html">Se mer här</a>
           </div>
         </div>
-
         <div class="PortfolioBx">
           <div class="imgBx">
             <img src="img/img2.png" />
           </div>
           <div class="TextBx">
             <h3>Arbetsprov till YRGO</h3>
-            <a class="nysida" href="http://linneacalmstierna.se">Se mer här</a>
+            <a class="newpage" href="arbetsprov.html">Se mer här</a>
           </div>
         </div>
-
         <div class="PortfolioBx">
           <div class="imgBx">
             <img src="img/img3.png" />
           </div>
           <div class="TextBx">
-            <h3>Projekt 3</h3>
-            <a class="nysida" href="http://linneacalmstierna.se">Se mer här</a>
+            <h3>Digitala Banners till Apotek Hjärtat</h3>
+            <a class="newpage" href="banners.html">Se mer här</a>
           </div>
         </div>
         <div class="PortfolioBx">
@@ -87,51 +91,48 @@
             <img src="img/img4.jpg" />
           </div>
           <div class="TextBx">
-            <h3>Projekt 4</h3>
-            <a class="nysida" href="http://linneacalmstierna.se">Se mer här</a>
+            <h3>Hemsidor till <br>Jönköpings 
+              kristna skolor</h3>
           </div>
         </div>
         <div class="PortfolioBx">
           <div class="imgBx">
-            <img src="img/img5.jpg" />
+            <img src="img/Daisy_Beauty_Magazine.png" />
           </div>
           <div class="TextBx">
-            <h3>Projekt 5</h3>
-            <a class="nysida" href="http://linneacalmstierna.se">Se mer här</a>
+            <h3>Annons till tidningen <br> Daisy Beauty</h3>
           </div>
         </div>
         <div class="PortfolioBx">
           <div class="imgBx">
-            <img src="img/img6.jpg" />
+            <img src="img/kvadrat_barkaby_foliering.png" />
           </div>
           <div class="TextBx">
-            <h3>Projekt 6</h3>
-            <a class="nysida" href="http://linneacalmstierna.se">Se mer här</a>
+            <h3>Folieringar till <br> Apotek Hjärtat</h3>
           </div>
         </div>
         <div class="PortfolioBx">
           <div class="imgBx">
-            <img src="img/img7.jpg" />
+            <img src="img/frontdesk_hemsida.png" />
           </div>
           <div class="TextBx">
-            <h3>Project 07</h3>
-            <a class="nysida" href="http://linneacalmstierna.se">Se mer här</a>
+            <h3>Hemsida till Frontdesk</h3>
           </div>
         </div>
         <div class="PortfolioBx">
           <div class="imgBx">
-            <img src="img/img8.jpg" />
+            <img src="img/frontdesk_instagram_story.png" />
           </div>
           <div class="TextBx">
-            <h3>Project 08</h3>
-            <a class="nysida" href="http://linneacalmstierna.se">Se mer här</a>
+            <h3>Instagram Story <br> till Frontdesk</h3>
           </div>
         </div>
       </div>
     </section>
-
+<!--Portfolio End-->
+<!--Contact Start-->
     <section class="contact" id="contact">
-      <div class="title white">
+      <div class="title">
         <h2>Kontakta mig</h2>
         <p>
           Du är varmt välkommen att kontakta mig om du har frågor eller vill
@@ -157,21 +158,23 @@
         </div>
         <div class="row">
           <div class="co1100">
-            <textarea placeholder="Message"></textarea>
+            <textarea placeholder="Meddelande"></textarea>
           </div>
         </div>
         <div class="row">
           <div class="co1100">
-            <input type="submit" value="SEND" />
+            <input type="submit" value="Skicka" />
           </div>
         </div>
       </div>
     </section>
-
+<!--Contact End-->
+<!--Copyright Start-->
     <div class="copyright">
       <p>Copyright 2021 © Linnea Calmstierna</p>
     </div>
-
+<!--Copyright End-->
+    <!--Menu Pages Start-->
     <div class="sidebar">
       <ul class="menu">
         <li><a href="index.html" onclick="toggleMenu();">Hem</a></li>
@@ -181,7 +184,8 @@
         <li><a href="contact.html" onclick="toggleMenu();">Kontakt</a></li>
       </ul>
     </div>
-
+    <!--Menu Pages End-->
+      <!--Java Script Function Hamburgermenu Start-->
     <script>
       function toggleMenu() {
         const menuToggle = document.querySelector(".toggle");
@@ -190,6 +194,6 @@
         sidebar.classList.toggle("active");
       }
     </script>
-    <!--slut-->
+      <!--Java Script Function Hamburgermenu End-->
   </body>
 </html>

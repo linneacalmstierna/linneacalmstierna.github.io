@@ -6,9 +6,7 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
-
-/**Banner och meny start**/
-
+/**Menu Start**/
 .toggle {
   position: fixed;
   top: 30px;
@@ -23,7 +21,6 @@
   z-index: 1000;
   border-radius: 4px;
 }
-
 .toggle.active {
   background: #5cbfc1 url(img/close.png);
   background-size: 25px;
@@ -31,21 +28,17 @@
   background-repeat: no-repeat;
 }
 section {
-  padding: 2rem;
+  padding: 3rem;
   min-height: 100vh;
 }
-.banner {
-  position: relative;
-  width: 100%;
-}
-.banner .imgSidebar {
+.imgSidebar {
   position: absolute;
   top: 0;
   left: 0;
   width: 500px;
   height: 100%;
 }
-.banner .imgSidebar img {
+.imgSidebar img {
   position: absolute;
   top: 0;
   left: 0;
@@ -53,8 +46,20 @@ section {
   height: 100%;
   object-fit: cover;
 }
-
-.banner .contentBx,
+.sidebar ul li a:hover {
+  color: #369496;
+}
+.contentBx {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% - 500px);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
 .sidebar {
   position: absolute;
   top: 0;
@@ -66,26 +71,28 @@ section {
   align-items: center;
   padding: 100px;
 }
-
-.banner .contentBx h4 {
-  font-size: 1.5em;
+h1 {
+  font-size: 32px;
   color: #333;
   font-weight: 300;
 }
-.banner .contentBx h4 span {
+span {
   color: #5cbfc1;
-  font-size: 1.5em;
+  font-size: 48px;
   font-weight: 700;
 }
-.banner .contentBx h2 {
-  font-size: 3em;
+h2 {
+  font-size: 46px;
   color: #333;
   line-height: 1em;
 }
 p {
-  font-size: 1.1em;
+  font-size: 16px;
   margin: 20px 0;
   font-family: 300;
+}
+a:hover {
+  color: #369496;
 }
 .btn {
   background: #5cbfc1;
@@ -97,7 +104,10 @@ p {
   letter-spacing: 2px;
   border-radius: 10px;
 }
-
+.btn:hover {
+  background-color: #369496;
+  color: #fff;
+}
 .sidebar {
   position: fixed;
   background: #112439;
@@ -130,9 +140,6 @@ p {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-.sidebar ul li a:hover {
-  color: #5cbfc1;
-}
 .sci {
   position: absolute;
   left: 100px;
@@ -145,22 +152,19 @@ p {
   margin-right: -15px;
   list-style: none;
 }
-.sci li img {
+.sci img {
   transform: scale(0.5);
   opacity: 0.7;
 }
-.sci li img:hover {
+.sci img:hover {
   opacity: 1;
 }
-
-/**Banner och meny slut**/
-
+/**Menu End**/
 /**About me start**/
 .title {
   width: 100%;
   text-align: center;
 }
-
 .title h2 {
   position: relative;
   color: #5cbfc1;
@@ -168,12 +172,7 @@ p {
   font-weight: 700;
   letter-spacing: 1px;
 }
-
-.title p {
-  max-width: 700px;
-  display: inline-block;
-}
-
+/**Streck ovanför rubrik**/
 .title h2::before {
   content: "";
   position: absolute;
@@ -184,38 +183,30 @@ p {
   height: 4px;
   background: #000;
 }
-.title.white h2,
-.title.white p {
-  color: #fff;
-}
-.title.white h2::before {
-  background: #fff;
-}
-.about {
-  background: #fff;
-}
-.about .content {
+.content {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
 }
-.about .content .textBx {
+.textBx {
   min-width: 49%;
   width: 49%;
 }
-.about .content .textBx p {
-  color: #000;
-}
-.about .content .imgBx {
-  margin-left: 40px;
-  margin-right: 40px;
+.about {
   width: 100%;
 }
-.about .content .imgBx img {
+.content {
+  width: 100%;
+}
+.imgBx {
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+img {
   max-width: 100%;
 }
 /**About Me End**/
-
 /**Services start**/
 .services .content {
   margin-top: 2rem;
@@ -224,7 +215,7 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.services .content .servicesBx {
+.servicesBx {
   padding: 40px 20px;
   max-width: 340px;
   margin: 20px;
@@ -232,56 +223,39 @@ p {
   text-align: center;
   background: #f5f5f5;
 }
-.services .content .servicesBx:hover {
+.servicesBx:hover {
   background: #112439;
 }
-.services .content .servicesBx img {
+.services img {
   max-width: 80px;
   transition: 0, 5s;
 }
-.services .content .servicesBx:hover img {
+.servicesBx:hover img {
   filter: invert(1);
 }
-.services .content .servicesBx h2 {
+.servicesBx h2 {
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: 600;
   transition: 0.5s;
 }
-.services .content .servicesBx:hover h2 {
+.servicesBx:hover h2 {
   color: #fff;
 }
-.services .content .servicesBx p {
+.servicesBx p {
   margin: 0;
   transition: 0.5s;
 }
-.services .content .servicesBx:hover p {
+.servicesBx:hover p {
   color: #fff;
-}
-
-.button a {
-  background: #5cbfc1;
-  color: #fff;
-  padding: 10px 30px;
-  display: row;
-  font-weight: 500;
-  letter-spacing: 2px;
-  cursor: pointer;
-  max-width: 150px;
-  border-radius: 10px;
-  width: 100%;
-  margin: auto;
-  text-decoration: none;
 }
 /**Services End**/
-
 /**Portfolio Start**/
-
 a:hover {
   color: #369496;
 }
-.nysida {
+.newpage {
   color: #fff;
   position: absolute;
   height: 0;
@@ -295,7 +269,7 @@ a:hover {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.portfolio .content .PortfolioBx {
+.PortfolioBx {
   position: relative;
   width: 265px;
   height: 265px;
@@ -303,8 +277,7 @@ a:hover {
   transition: 0.5s;
   text-align: center;
 }
-.portfolio .content .PortfolioBx .imgBx,
-.portfolio .content .PortfolioBx .TextBx {
+.TextBx {
   position: absolute;
   top: 0;
   left: 0;
@@ -313,8 +286,11 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #5cbfc1;
+  opacity: 0;
+  transition: 0.5s;
 }
-.portfolio .content .PortfolioBx .imgBx img {
+.PortfolioBx img {
   position: absolute;
   top: 0;
   left: 0;
@@ -322,50 +298,43 @@ a:hover {
   height: 100%;
   object-fit: cover;
 }
-.portfolio .content .PortfolioBx .TextBx {
-  background: #5cbfc1;
-  opacity: 0;
-  transition: 0.5s;
-}
-.portfolio .content .PortfolioBx:hover .TextBx {
+.PortfolioBx:hover .TextBx {
   opacity: 1;
 }
-.portfolio .content .PortfolioBx .TextBx h3 {
+.TextBx h3 {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 1em;
 }
 /**Portfolio End**/
-
 /**Contact Start**/
 .contact {
-  background: #112439;
+  background: #f5f5f5;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.contact .contactForm {
+.contactForm {
   position: relative;
   width: 700px;
   margin-top: 20px;
 }
-.contact .contactForm .row {
+.row {
   width: 100%;
   display: flex;
 }
-.contact .contactForm .row .co150 {
+.co150 {
   width: 50%;
   margin: 10px;
 }
-.contact .contactForm .row .co1100 {
+.co1100 {
   width: 100%;
   margin: 10px;
   text-align: center;
 }
-.contact .contactForm .row input,
-.contact .contactForm .row textarea {
+input {
   width: 100%;
   padding: 10px;
   border: none;
@@ -376,10 +345,19 @@ a:hover {
   resize: none;
   border-radius: 4px;
 }
-.contact .contactForm .row textarea {
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: #fff;
+  color: #111;
+  font-size: 16px;
+  resize: none;
+  border-radius: 4px;
   height: 100px;
 }
-.contact .contactForm .row input[type="submit"] {
+input[type="submit"] {
   background: #5cbfc1;
   color: #fff;
   padding: 10px 30px;
@@ -390,10 +368,12 @@ a:hover {
   max-width: 150px;
   border-radius: 10px;
 }
-
+input:hover[type="submit"] {
+  background-color: #369496;
+}
 .copyright {
-  color: #747474;
-  background: #0e1d2e;
+  color: #fff;
+  background: #5cbfc1;
   text-align: center;
   padding: 10px;
 }
@@ -402,20 +382,15 @@ a:hover {
   font-size: 16px;
 }
 /**Contact End**/
-
 /**@media Start**/
-
 @media (max-width: 991px) {
-  .banner .imgSidebar {
+  .imgSidebar {
     display: none;
   }
-  .banner .contentBx,
+  .contentBx,
   .sidebar {
     width: 100%;
     padding: 40px;
-  }
-  .logoText {
-    left: 40px;
   }
   .toggle {
     right: 40px;
@@ -423,22 +398,19 @@ a:hover {
   .sci {
     left: 40px;
   }
-  section {
-    padding: 40px;
-  }
-  .about .content {
+  .content {
     flex-direction: column;
   }
-  .about .content .textBx {
+  .content .textBx {
     min-width: 100%;
     width: 100%;
   }
-  .about .content {
+  .content {
     display: flex;
     justify-content: space-between;
     margin-top: 0pt;
   }
-  .about .content .imgBx {
+  .content .imgBx {
     margin-left: 0;
   }
   .services .content .servicesBx {
@@ -466,11 +438,13 @@ a:hover {
 @media (max-width: 500px) {
   .services .content .servicesBx,
   .portfolio .content .PortfolioBx {
-    padding: 30px 20px;
     max-width: 100%;
-    width: 100%;
-    margin: 10px 0;
+  }
+
+  @media (max-width: 587px) {
+    .contentBx {
+      width: 100%;
+    }
   }
 }
-
 /**@media End**/
