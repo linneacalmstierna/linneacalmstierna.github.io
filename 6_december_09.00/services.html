@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Services</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--Hamburgemenu Start-->
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <!--Hamburgemenu End-->
+    <!--Services Start-->
+    <section class="services" id="services">
+      <div class="title">
+        <h2>Mina tjänster</h2>
+        <p>
+          Som Digital Designer arbetar jag brett inom visuell kommunikation. Här
+          listas några av de tjänster jag erbjuder.
+        </p>
+      </div>
+      <div class="content">
+        <div class="servicesBx">
+          <img src="img/icon1.png" />
+          <h2>Web Design</h2>
+          <p>
+            Jag designar responsiva klickbara prototyper av hemsidor i Figma.
+            Sedan bygger jag dem i CMS-verktyget Wordpress eller kodar i Visual
+            Studio Code.
+          </p>
+        </div>
+        <div class="servicesBx">
+          <img src="img/icon2.png" />
+          <h2>App Design</h2>
+          <p>
+            Med fokus på användarvänlighet skapar jag klickbara prototyper av
+            appar och andra digitala displayer i Figma och Adobe XD.
+          </p>
+        </div>
+        <div class="servicesBx">
+          <img src="img/icon3.png" />
+          <h2>Illustration</h2>
+          <p>
+            Digitala illustrationer skapar jag primärt i Adobe Illustrator. Jag
+            ritar allt ifrån modeillustrationer till infografik och logotyper.
+          </p>
+        </div>
+        <div class="servicesBx">
+          <img src="img/icon4.png" />
+          <h2>Print</h2>
+          <p>
+            Jag designar och skapar original till förpackningar foldrar,
+            broschyrer, folieringar och visitkort.
+          </p>
+        </div>
+        <div class="servicesBx">
+          <img src="img/icon5.png" />
+          <h2>Digitala Banners</h2>
+          <p>
+            För att marknadsföra produkter och tjänster skapar jag digitala
+            banners, dvs reklamannonser som förekommer på webbsidor.
+          </p>
+        </div>
+        <div class="servicesBx">
+          <img src="img/icon6.png" />
+          <h2>Rörlig bild</h2>
+          <p>
+            Premiere Pro och After Effects är de program jag använder mest för
+            att skapa rörligt material. Jag filmar bland annat Instagram
+            Stories, stop motion videor och animerar gif:ar.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--Services End-->
+    <!--Contact Start-->
+    <section class="contact" id="contact">
+      <div class="title">
+        <h2>Kontakta mig</h2>
+        <p>
+          Du är varmt välkommen att kontakta mig om du har frågor eller vill
+          diskutera eventuella samarbeten.
+        </p>
+      </div>
+      <div class="contactForm">
+        <div class="row">
+          <div class="co150">
+            <input type="text" name="" placeholder="Förnamn" />
+          </div>
+          <div class="co150">
+            <input type="text" name="" placeholder="Efternamn" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="co150">
+            <input type="text" name="" placeholder="E-post" />
+          </div>
+          <div class="co150">
+            <input type="text" name="" placeholder="Mobilnummer" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="co1100">
+            <textarea placeholder="Message"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="co1100">
+            <input type="submit" value="SEND" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Contact End-->
+    <!--Copyright Start-->
+    <div class="copyright">
+      <p>Copyright 2021 © Linnea Calmstierna</p>
+    </div>
+    <!--Copyright End-->
+    <!--Menu Pages Start-->
+    <div class="sidebar">
+      <ul class="menu">
+        <li><a href="index.html" onclick="toggleMenu();">Hem</a></li>
+        <li><a href="about.html" onclick="toggleMenu();">Om mig</a></li>
+        <li><a href="services.html" onclick="toggleMenu();">Tjänster</a></li>
+        <li><a href="portfolio.html" onclick="toggleMenu();">Portfolio</a></li>
+        <li><a href="contact.html" onclick="toggleMenu();">Kontakt</a></li>
+      </ul>
+    </div>
+    <!--Menu Pages End-->
+    <!--Java Script Function Hamburgermenu Start-->
+    <script>
+      function toggleMenu() {
+        const menuToggle = document.querySelector(".toggle");
+        const sidebar = document.querySelector(".sidebar");
+        menuToggle.classList.toggle("active");
+        sidebar.classList.toggle("active");
+      }
+    </script>
+    <!--Java Script Function Hamburgermenu End-->
+  </body>
+</html>
